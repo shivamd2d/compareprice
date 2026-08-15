@@ -2,7 +2,7 @@ import Link from "next/link";
 import { offers } from "@/lib/catalog";
 
 export default function StoresPage() {
-  const stores = [...new Set(offers.map((offer) => offer.merchantName))];
+  const stores = [...new Set(offers.map((offer) => offer.retailerName))];
 
   return (
     <div>
